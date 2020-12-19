@@ -1,0 +1,43 @@
+table{
+    
+    margin-right: 50%;
+    border: 2px solid;
+    text-align: left;
+}
+td,th,tr{
+    border: 1px solid black;
+    width: auto;
+}
+
+caption{
+    border: 2px solid black;
+    border-bottom: 2px;
+    padding: 3px;
+}
+
+img{
+    max-width: 40%;
+     max-height: 40%;
+     margin: 10px 0;
+}
+#anio{
+    text-align: center;
+}
+#colgroupretoizq {
+    
+    width: 25%;
+    background: red;
+    
+}
+#colgroupretoder{
+    background-color: aqua;
+    padding: 30px;
+    width: 50%;
+}
+
+.reto {
+    border-collapse: collapse;
+    width:  auto;
+    text-align: center;
+    height: 10em;
+}
