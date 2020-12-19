@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas en Html5</title>
+    <link rel="stylesheet" href="./styles/tabla.css">
+</head>
+<body>
+    <main>
+        <h1>Tablas en Html5</h1>
+        <ul>
+            <li><strong>table</strong>   Indica el inicio y el cierre de la tabla</li>
+            <li><strong>tr</strong>     (Table Row) Representa una nueva fila en la tabla </li>
+            <li><strong>td</strong>       (Table Data Cell) Representa una celda de datos</li>
+            <li><strong>th</strong>     Celda de cabecera , resalta el texto</li>
+            <dl>
+                <dt>
+                    <dd><img src="images/tabla1.png" alt="" ></dd>
+                    
+                </dt>
+                
+            </dl>
+            <li><strong>caption</strong> Añade un titulo sobre la tabla	</li>
+            <dl>
+                <dd><img src="images/caption.png" alt="" ></dd>
+                
+            </dl>
+        </ul>
+        
+        <ul><h2>Etiquetas de tablas para agrupar </h2>
+            <li><strong>thead</strong> Agrupa  las celdas de cabecera</li>
+            <li><strong>tbody</strong>    agrupa las filas de cuerpo que contienen los datos </li>
+            <li><strong>tfoot</strong> Agrupa las filas del pie de la tabla normalmente son las que contienen los datos de los totales y conclusiones</li>
+            <img src="images/etiquetas-para-agrupar.png" alt="" style="max-width: 40%; max-height: 40%;">
+            <dd>
+                <table >
+                    <caption>MI PRIMERA TABLA</caption>
+                    <thead>
+                            <th>Alumno</th>
+                            <th>Nota</th>               
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>pepe</td>
+                            <td>7,65</td>
+                        </tr>
+                        <tr>
+                            <td>Maria</td>
+                            <td>8,54</td>
+                        </tr>
+                        <tr>
+                            <td>Jordi</td>
+                            <td>5,55</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>               
+                                <td><strong>Media</strong> </td>
+                                <td><strong>7,25</strong></td>               
+                        </tr>
+                        <tr>
+                                <td><strong>Desv. Tipica</strong></td>
+                                <td><strong>7,35</strong></td>
+                           
+                        </tr>
+                    </tfoot>
+                </table>
+            </dd>
+        </ul>
+        <h2>Combinar celdas de las tablas</h2>
+        <p>Mediante el uso de atributos colspan y rowspan  de las etiquetas de tablas se puede indicar cuanto espacio va a ocupar una celda </p>
+        <ul>
+            <li><strong>Colspan</strong> este atributo indica el numero de celdas que ocupa Horizontalmente</li>
+            <li><strong>Rowspan</strong> este atributo idica cuantas celdas de espacio ocupa Verticalmente</li>
+            <dd><img src="images/tablacombinada.png" alt=""></dd> 
+        </ul>
+        <table>
+            
+                <caption>Ingresos</caption>
+                
+                
+           
+            <thead>
+                <tr>
+                    
+                    <td id="anio" colspan="2" >2012</td>
+                    
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td rowspan="2">Enero</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Febrero</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <td>Marzo</td>
+                    <td rowspan="2">Por definir</td>
+                </tr>
+                <tr>
+                    <td>Abril</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Colgroup y Col</h2>
+        <p>agrupa las columnas se deben declarar antes que cualquier otra etiqueta dentro del elemento table a excepcion del elemento caption</p>
+        <table class="egt">
+
+            <colgroup span="3"></colgroup>
+          
+            <colgroup>
+          
+              <col>
+              
+          
+              <col span="2" style="background: rgba(255, 128, 0, 0.3); border: 1px solid rgba(200, 100, 0, 0.3);">
+          
+            </colgroup>
+          
+            <tr>
+          
+              <th>Ciudad</th>
+          
+              <th>Lengua</th>
+          
+              <th>Moneda</th>
+          
+              <th>Área</th>
+          
+              <th>Población</th>
+          
+              <th>Densidad</th>
+          
+            </tr>
+          
+            <tr>
+          
+              <td>Londres</td>
+          
+              <td>Inglés</td>
+          
+              <td>GBP</td>
+          
+              <td>1,572.00 km<sup>2</sup></td>
+          
+              <td>8,416,535</td>
+          
+              <td>5,354/km<sup>2</sup></td>
+          
+            </tr>
+          
+            <tr>
+          
+              <td>Washington</td>
+          
+              <td>Inglés</td>
+          
+              <td>USD</td>
+          
+              <td>177.0 km<sup>2</sup></td>
+          
+              <td>646,449</td>
+          
+              <td>4,066/km<sup>2</sup></td>
+          
+            </tr>
+          
+            <tr>
+          
+              <td>Moscú</td>
+          
+              <td>Ruso</td>
+          
+              <td>RUB</td>
+          
+              <td>2,511 km<sup>2</sup></td>
+          
+              <td>11,503,501</td>
+          
+              <td>4,581.24/km<sup>2</sup></td>
+          
+            </tr>
+          
+          </table>
+          <h3>Retos</h3>
+          <table cellspacing="0" class="reto">
+              <colgroup span="2" id="colgroupretoizq" >
+                
+              </colgroup >
+              
+              
+              <colgroup span="1" id="colgroupretoder"></colgroup>
+              <caption style="border: 0;">Ingresos</caption>
+              <thead>
+                  
+                </thead>
+                
+                <tbody> 
+                    <tr>
+                        <td rowspan="2" >Enero</td>
+                        <td>1</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>2</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Febrero</td>
+                        <td>75</td>
+                        
+                    </tr>
+                </tbody>
+          </table>
+    </main>
+</body>
+
+</html>

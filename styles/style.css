@@ -1,0 +1,31 @@
+p{
+    
+    width: 90%;
+    border: 1px solid black;
+    font-size: 18px; /* px quiere decir 'píxeles': el tamaño de la fuente base es ahora de 10 píxeles de altura */
+  font-family: "Open Sans", sans-serif; /* Este debe ser el resto del resultado que obtuviste de Google fonts */
+    margin: 1px 0 1px 20px;
+}
+ h2 {
+    font-family: 'Lato', sans-serif;
+    border: 2px solid red;
+    text-align: justify;
+}
+span{
+   background: gray;
+}
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #00539F;
+    border: 3px blue;
+    font-size: 60px;
+    text-align: center;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  body{
+      border: 4px solid purple;
+  }
